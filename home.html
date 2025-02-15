@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Facey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Facey</a>
+            
+            <input type="text" class="search-input ms-auto me-3" placeholder="Buscar...">
+            
+            <div class="dropdown">
+                <div class="profile-dropdown dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Usuario">
+                    <span>@usuario1</span>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="/pages/profile.html">Perfil</a></li>
+                    <li><a class="dropdown-item text-danger" href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-5 .mt-responsive">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="friends-card">
+                    <h5 class="friends-title">Amigos Conectados</h5>
+                    <ul class="friends-list">
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Juan Pérez">
+                            <div class="friend-info">
+                                <span class="friend-name">Juan Pérez</span>
+                                <span class="status-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Andrea Gómez">
+                            <div class="friend-info">
+                                <span class="friend-name">Andrea Gómez</span>
+                                <span class="status-dot"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Carlos Ruiz">
+                            <div class="friend-info">
+                                <span class="friend-name">Carlos Ruiz</span>
+                                <span class="status-dot"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="feed-container">
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-img" alt="Usuario">
+                            <div class="user-info">
+                                <div class="username">@usuario1</div>
+                                <div class="fullname">Carlos Rodríguez</div>
+                            </div>
+                        </div>
+                        <img src="/img/background.png" class="post-media" alt="Imagen de usuario">
+                        <p class="post-caption">Disfrutando de un hermoso atardecer en la playa 🌅.</p>
+                        <div class="post-actions">
+                            <button class="like-btn">
+                                <img src="/svg/like.svg" class="like-icon" alt="Like">
+                                <span class="likes-count">120 Likes</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="profile-img" alt="Usuario">
+                            <div class="user-info">
+                                <div class="username">@usuario1</div>
+                                <div class="fullname">Carlos Rodríguez</div>
+                            </div>
+                        </div>
+                        <img src="/img/background.png" class="post-media" alt="Imagen de usuario">
+                        <p class="post-caption">Disfrutando de un hermoso atardecer en la playa 🌅.</p>
+                        <div class="post-actions">
+                            <button class="like-btn">
+                                <img src="/svg/like.svg" class="like-icon" alt="Like">
+                                <span class="likes-count">120 Likes</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="news-sidebar">
+                    <h5 class="news-title">📰 Noticias Recientes</h5>
+                    <div class="news-list">
+                        <div class="news-item">
+                            <img src="/img/elonmusk.png" alt="Noticia">
+                            <div>
+                                <span class="news-headline">🌟 Facebook anuncia nueva función de seguridad.</span>
+                                <p class="news-date">Hace 2 horas</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="/img/elonmusk.png" alt="Noticia">
+                            <div>
+                                <span class="news-headline">📢 Elon Musk presenta nuevo proyecto de IA.</span>
+                                <p class="news-date">Hace 4 horas</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="/img/elonmusk.png" alt="Noticia">
+                            <div>
+                                <span class="news-headline">💡 Descubre las últimas tendencias en redes sociales.</span>
+                                <p class="news-date">Ayer</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="/img/elonmusk.png" alt="Noticia">
+                            <div>
+                                <span class="news-headline">🔒 Nueva actualización de seguridad en Twitter.</span>
+                                <p class="news-date">Hace 5 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/js/functions.js"></script>
+
+</body>
+</html>
