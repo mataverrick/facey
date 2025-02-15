@@ -1,0 +1,267 @@
+
+:root {
+    --primary-color: #121212;
+    --accent-color: #ff4757;
+    --text-color: #ffffff;
+    --bg-light: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--bg-light);
+    padding: 15px;
+    backdrop-filter: blur(10px);
+}
+.container-fluid{
+    height: 100%;
+    margin-top: 65px;
+}
+.search-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: white;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feed-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.post-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fullname {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.post-media {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+}
+
+.post-caption {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.like-btn:hover {
+    transform: scale(1.1);
+}
+
+.likes-count {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.sidebar {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-dropdown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-dropdown img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+}
+
+.friends-card {
+background: rgba(255, 255, 255, 0.08);
+border-radius: 15px;
+padding: 20px;
+max-width: 300px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.friends-title {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+text-align: center;
+}
+
+.friends-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.friends-list li {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 10px;
+border-radius: 10px;
+transition: background 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.friends-list li:hover {
+background: rgba(255, 255, 255, 0.15);
+}
+
+.friends-list img {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #ff4757;
+}
+
+.friend-info {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-grow: 1;
+}
+
+.friend-name {
+font-size: 15px;
+}
+
+.status-dot {
+width: 10px;
+height: 10px;
+background: #2ecc71;
+border-radius: 50%;
+box-shadow: 0 0 8px rgba(46, 204, 113, 0.8);
+}
+
+
+.news-sidebar {
+background: rgba(255, 255, 255, 0.08);
+border-radius: 15px;
+padding: 20px;
+max-width: 500px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+}
+
+.news-title {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+text-align: center;
+}
+
+.news-list {
+max-height: 600px; 
+overflow-y: auto; 
+padding-right: 10px;
+}
+
+.news-item {
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 10px;
+border-radius: 10px;
+transition: background 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.news-item:hover {
+background: rgba(255, 255, 255, 0.15);
+}
+
+.news-item img {
+width: 100px;
+height: 100px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.news-headline {
+font-size: 14px;
+font-weight: bold;
+color: #ffffff;
+}
+
+.news-date {
+font-size: 12px;
+color: #bbb;
+}
+
+
